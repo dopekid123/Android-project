@@ -20,14 +20,6 @@ public class BIDashboardPage {
 		return nextPage;
 	}
 	
-	//nothing needed giot purpose
-	public WebElement getPreviousPage() {
-		return previousPage;
-	}
-	
-	public WebElement getPreviousPage() {
-		return previousPage;
-	}
-	
+
 
 	}
