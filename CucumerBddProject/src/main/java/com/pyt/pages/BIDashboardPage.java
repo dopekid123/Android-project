@@ -22,4 +22,5 @@ public class BIDashboardPage {
 	
 
 //jijij
+	//lkol
 	}
