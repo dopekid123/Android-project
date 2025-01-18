@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Cbrpage {
+	
+	//s
 
 	@FindBy(xpath="//button[contains(@class,'PackagesStyles__WAButton')]")
 	WebElement packagesCbr;
