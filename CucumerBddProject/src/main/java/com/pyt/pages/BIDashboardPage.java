@@ -21,10 +21,7 @@ public class BIDashboardPage {
 	}
 	
 	
-	//review this please for git
-	public WebElement getPreviousPage() {
-		return previousPage;
-	}
+	
 
 
 	}
