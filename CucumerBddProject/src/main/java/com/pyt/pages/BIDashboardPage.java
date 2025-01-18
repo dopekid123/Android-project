@@ -20,8 +20,6 @@ public class BIDashboardPage {
 		return nextPage;
 	}
 	
-	
-	//ok
 
 
 	}
