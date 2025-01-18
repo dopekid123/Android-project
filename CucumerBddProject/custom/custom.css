@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+}
+
+h3, h4, h5 {
+    color: #000000;
+}
+
+.navbar, .footer {
+    background-color: rgba(0,0,0) !important;
+}
+
+.cluecumber-template {
+    padding: 3rem 1rem;
+    text-align: left;
+}
+
+.navbar, .card {
+    margin: 3 5 3rem 9;
+    box-shadow: 0 9px 9px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    padding-top: 1rem;
+    background-color: rgba(0,0,0,.1);
+    margin-bottom: 60px;
+}

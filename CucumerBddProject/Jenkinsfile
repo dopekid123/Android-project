@@ -1,0 +1,36 @@
+pipeline {
+    agent {
+        kubernetes {
+        	yaml '''
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: maven
+    image: maven:3.6.3-jdk-11-slim
+    command:
+    - cat
+    tty: true
+    volumeMounts:
+      - mountPath: "/root/.m2"
+        name: m2
+  volumes:
+  - name: m2
+    persistentVolumeClaim:
+      claimName: m2
+'''
+        }
+    }
+    stages {
+        stage('build') {
+            steps {
+                container('maven') {                                
+                    echo 'Build maven'
+                    sh script: '''
+                    mvn -f pom-parallel.xml clean install -DconfigEnv=$ENV -DforkCount=$NODES -Dcucumber.options=\"--tags @$SCOPE\"
+                    ''' 
+                }
+            }
+        }
+    }
+}
