@@ -11,6 +11,7 @@ public class AdminPage {
 	WebElement adminDiscountGlobaButton;
 
 	// Admin Options DropDown
+	//help
 
 	@FindBy(xpath = "//div[contains(@class,'dropdown')]//a[contains(text(),'Send to PLATO')] | //div[contains(@class,'dropdown open')] | //div[contains(@class,'dropdown')]//span[contains(text(),'Send to PLATO')]")
 	WebElement adminSendToPlatoOption;
